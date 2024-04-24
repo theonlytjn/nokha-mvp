@@ -1,0 +1,12 @@
+#loading,
+#success_msg,
+#error_msg,
+#invalid_publisher_number{
+    display: none;
+}
+.jobsearch-kropjobs .import-kropjobs, .jobsearch-kropjobs #loading{
+    float: left !important;
+}
+.jobsearch-kropjobs #loading{
+    padding: 12px 0px 0px 15px;
+}

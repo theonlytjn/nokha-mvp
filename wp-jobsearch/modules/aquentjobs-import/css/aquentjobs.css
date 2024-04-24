@@ -1,0 +1,12 @@
+#loading,
+#success_msg,
+#error_msg,
+#invalid_publisher_number{
+    display: none;
+}
+.jobsearch-aquentjobs .import-aquentjobs, .jobsearch-aquentjobs #loading{
+    float: left !important;
+}
+.jobsearch-aquentjobs #loading{
+    padding: 12px 0px 0px 15px;
+}

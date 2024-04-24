@@ -1,0 +1,2907 @@
+/************************************************
+Stylesheet: Main Stylesheet
+*************************************************/
+/*********************
+GENERAL STYLES
+*********************/
+html {
+    font-family: $body-font-family;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+
+    #home-banner {
+
+        h1 {
+            font-size: 2.25rem !important;
+        }
+
+        p {
+            font-size: 1.25rem;
+        }
+
+    }
+
+    #who-we-are,
+    #how-hire,
+    #groups-history,
+    #our-culture,
+    #locations {
+        h2 {
+            font-size: 3rem !important;
+            margin-bottom: 2.5rem;
+        }
+
+    }
+
+    #groups-history h1 {
+        font-size: 2.25rem !important;
+    }
+
+    .oc-text-2,
+    .oc-text-4,
+    .oc-text-5,
+    .oc-text-7,
+    .oc-text-10 {
+        color: $black !important;
+    }
+
+    .counter-2,
+    .counter-4,
+    .counter-5,
+    .counter-7,
+    .counter-10 {
+        color: $black !important;
+    }
+
+    .overlay-2,
+    .overlay-4,
+    .overlay-5,
+    .overlay-7,
+    .overlay-10 {
+        background: rgba(248, 247, 247, 1.0) !important;
+    }
+
+    .jobsearch-top-searchbar .jobsearch-subheader-form .jobsearch-banner-search ul li.jobsearch-banner-submit i {
+        z-index: 5 !important;
+    }
+
+    .ubermenu-main .ubermenu-item-normal > .ubermenu-target {
+        text-align: center !important;
+    }
+
+    #top-bar {
+        padding: 0.75em 0 0.25em !important;
+    }
+
+    .jobsearch-top-searchbar .jobsearch-subheader-form .jobsearch-banner-search ul li.jobsearch-banner-submit i {
+        z-index: 5 !important;
+    }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+@font-face {
+    font-family: 'total_sansbold';
+    src: url('../fonts/totalsansbold-webfont.woff2') format('woff2'),
+        url('../fonts/totalsansbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'total_sansbold_italic';
+    src: url('../fonts/totalsansbolditalic-webfont.woff2') format('woff2'),
+        url('../fonts/totalsansbolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'total_sansregular';
+    src: url('../fonts/totalsansregular-webfont.woff2') format('woff2'),
+        url('../fonts/totalsansregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'total_sansitalic';
+    src: url('../fonts/totalsansregularitalic-webfont.woff2') format('woff2'),
+        url('../fonts/totalsansregularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.clear1 {
+    clear: both;
+    height: 1em
+}
+
+.clear2 {
+    clear: both;
+    height: 2em
+}
+
+.clear3 {
+    clear: both;
+    height: 3em
+}
+
+.clear4 {
+    clear: both;
+    height: 4em
+}
+
+.clear5 {
+    clear: both;
+    height: 5em
+}
+
+.clear6 {
+    clear: both;
+    height: 6em
+}
+
+.clear7 {
+    clear: both;
+    height: 7em
+}
+
+.clear8 {
+    clear: both;
+    height: 8em
+}
+
+.clear9 {
+    clear: both;
+    height: 9em
+}
+
+.clear10 {
+    clear: both;
+    height: 10em
+}
+
+.clear11 {
+    clear: both;
+    height: 11em
+}
+
+.clear12 {
+    clear: both;
+    height: 12em
+}
+
+.clear13 {
+    clear: both;
+    height: 13em
+}
+
+.clear14 {
+    clear: both;
+    height: 14em
+}
+
+.clear15 {
+    clear: both;
+    height: 15em
+}
+
+.clear16 {
+    clear: both;
+    height: 16em
+}
+
+.clear17 {
+    clear: both;
+    height: 17em
+}
+
+.clear18 {
+    clear: both;
+    height: 18em
+}
+
+.clear19 {
+    clear: both;
+    height: 19em
+}
+
+.clear20 {
+    clear: both;
+    height: 20em
+}
+
+ul.center-list {
+    display: table !important;
+    margin: 0 auto;
+
+    li {
+        display: inline;
+        padding: 1em;
+    }
+}
+
+.align-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.section-block {
+    float: left;
+    width: 100%;
+    display: block;
+    padding: 3.5em 0;
+
+    &-top {
+        padding: 3.5em 0 0 0;
+    }
+
+    &-bottom {
+        padding: 0 0 3.5em 0;
+    }
+}
+
+/*********************
+PAGE TEMPLATES
+*********************/
+#page-banner {
+    font-family: $body-font-family;
+    color: $black !important;
+
+    h1,
+    h2 {
+        margin-bottom: 0;
+    }
+
+    p {
+        font-family: $body-font-family;
+    }
+
+    .rs-layer {
+        font-family: $body-font-family;
+    }
+}
+
+/*********************
+HOME
+*********************/
+
+body.home {
+    /* Location of the image */
+    background-image: url(https://nokha-mvp/wp-content/uploads/2024/02/background-photo-scaled.jpg);
+
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+
+    /* Makes the image fixed in the viewport so that it doesn't move when
+     the content height is greater than the image height */
+    background-attachment: fixed;
+
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+
+    /* Pick a solid background color that will be displayed while the background image is loading */
+    background-color: #152239;
+
+    /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+    body.home {
+        /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+        background-image: url(https://nokha-mvp/wp-content/uploads/2024/02/background-photo-mobile-devices.jpg);
+    }
+}
+
+
+
+#home-banner {
+
+    .home-card {
+        float: left;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        position: relative;
+
+        .card-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 15;
+            padding: 2em;
+            background: rgba(0, 0, 0, 0.5);
+            -moz-transition: background-color 500ms linear;
+            -webkit-transition: background-color 500ms linear;
+            transition: background-color 500ms linear;
+
+            h1 {
+                font-size: 50px;
+                margin-bottom: 2rem;
+            }
+
+            p.tagline {
+                font-size: 20px;
+            }
+
+            a {
+                color: $white !important;
+
+                &:hover {
+                    color: $brand-primary !important;
+                }
+
+            }
+
+            .logo {
+                width: 200px;
+                margin-bottom: 2em;
+            }
+
+            .callout {
+                background: $brand-primary !important;
+                color: $white !important;
+                padding: 2em !important;
+                text-align: left;
+
+                &:hover {
+                    background: $white !important;
+                    color: $black !important;
+
+                    a {
+                        color: $brand-primary !important;
+                    }
+
+                }
+            }
+
+
+            /* Small only */
+            @media screen and (max-width: 39.9375em) {
+
+                padding: 1em !important;
+
+                h1 {
+                    font-size: 28px;
+                }
+
+                p.tagline {
+                    font-size: 16px;
+                }
+
+                .logo {
+                    width: 175px;
+                    margin-bottom: 2em;
+                }
+
+
+            }
+
+            .img-box {
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                color: $white !important;
+                display: flex;
+                align-items: center;
+                text-align: left !important;
+
+                .divider {
+                    width: 100%;
+                    float: left;
+                    height: 25px;
+                }
+
+            }
+
+
+        }
+
+    }
+
+}
+
+#login-register-banner {
+    .home-card {
+        float: left;
+        width: 100%;
+        display: block;
+        position: relative;
+
+        .card-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 15;
+            padding: 2em;
+            background: rgba(38, 38, 38, 0.75);
+            -moz-transition: background-color 500ms linear;
+            -webkit-transition: background-color 500ms linear;
+            transition: background-color 500ms linear;
+            opacity: 1;
+
+            .logo {
+                width: 200px;
+                margin-bottom: 2em;
+            }
+
+            h1 {}
+
+            a {
+                text-decoration: underline;
+                margin-left: 3px;
+            }
+
+            .img-box {
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                color: $white !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: left !important;
+            }
+        }
+    }
+}
+
+#our-culture {
+
+    margin-bottom: 3rem;
+
+    .overlay {}
+
+    .oc-container {
+        position: relative;
+        margin: 0.625rem 0;
+
+        .overlay {
+            height: 100%;
+            width: 100%;
+            background: black;
+            float: left;
+            position: absolute;
+            z-index: 9;
+            top: 0;
+        }
+
+        .oc-description {
+            position: absolute;
+            bottom: 25px;
+            left: 15px;
+            z-index: 9999;
+            padding: 0.5em;
+            font-size: 1.15rem;
+        }
+
+        .step-count {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 9999;
+            padding: 0.5em;
+            font-size: 1.15rem;
+        }
+
+    }
+
+    .oc-text-2,
+    .oc-text-4,
+    .oc-text-5,
+    .oc-text-7,
+    .oc-text-10 {
+        color: $white;
+    }
+
+    .counter-2,
+    .counter-4,
+    .counter-5,
+    .counter-7,
+    .counter-10 {
+        color: $white;
+    }
+
+    .overlay-2,
+    .overlay-4,
+    .overlay-5,
+    .overlay-7,
+    .overlay-10 {
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.35);
+        float: left;
+        position: absolute;
+        z-index: 9;
+        top: 0;
+    }
+}
+
+#locations {
+
+    img {
+        margin-bottom: 0.75rem;
+    }
+
+    h3 {
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+}
+
+#who-we-are {
+
+    ul {
+
+        list-style: none;
+
+        li {
+            font-size: 1.25rem;
+            padding: 0.75em 0;
+            border-bottom: 1px solid #D1D1D1;
+
+            &:first-child {
+                border-top: 1px solid #D1D1D1;
+            }
+
+            &::before {
+                content: "\2022";
+                color: $brand-primary;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+        }
+
+    }
+
+}
+
+#testimonials {
+
+    .section-block {
+        padding-bottom: 5rem;
+    }
+
+    .carousel {
+        margin: 0;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        margin-right: 0.9375rem;
+        margin-left: 0.9375rem;
+    }
+
+    h2 {
+        line-height: 1.2;
+        margin-bottom: 1.25rem;
+    }
+
+    h6 {
+        text-transform: uppercase !important;
+        letter-spacing: 0.1em !important;
+    }
+
+    @media screen and (max-width: 39.9375em) {
+        .carousel-cell {
+            width: 100%;
+            margin-right: 0.9375rem;
+            margin-left: 0.9375rem;
+        }
+    }
+
+    .flickity-page-dots {
+        margin-top: 0.5em;
+        position: inherit !important;
+        text-align: left !important;
+    }
+
+}
+
+#groups-history {
+
+    h1 {
+        font-size: 8rem;
+        line-height: 0.8;
+    }
+
+    ul {
+
+        list-style: none;
+
+        li {
+            font-size: 1.25rem;
+            padding: 0.75em 0;
+            border-bottom: 1px solid #D1D1D1;
+
+            &:first-child {
+                border-top: 1px solid #D1D1D1;
+            }
+
+            &::before {
+                content: "\2022";
+                color: $brand-primary;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+        }
+
+    }
+
+
+}
+
+#who-we-are {
+    h2 {
+        font-size: 10rem;
+        line-height: 0.8;
+    }
+}
+
+#how-hire {
+
+    ul {
+
+        list-style: none;
+
+        li {
+            font-size: 1rem;
+            padding: 0.75em 0;
+            border-bottom: 1px solid #D1D1D1;
+
+            &:first-child {
+                border-top: 1px solid #D1D1D1;
+            }
+
+            &::before {
+                content: "\2022";
+                color: $brand-primary;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+        }
+
+    }
+
+}
+
+#groups-history,
+#how-hire,
+#our-culture,
+#locations {
+    h2 {
+        font-size: 6rem;
+        margin-bottom: 2.5rem;
+    }
+
+    p.first {
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem
+    }
+
+    p {
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem
+    }
+
+    ul {
+        li {}
+    }
+}
+
+/*********************
+PAGE : LOGIN/REGISTER
+*********************/
+#login-register-banner {
+    .home-card {
+        float: left;
+        width: 100%;
+        display: block;
+        position: relative;
+
+        .card-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 15;
+            padding: 2em;
+            background: rgba(0, 0, 0, 0.35);
+            -moz-transition: background-color 500ms linear;
+            -webkit-transition: background-color 500ms linear;
+            transition: background-color 500ms linear;
+            opacity: 1;
+
+            .logo {
+                width: 175px;
+                margin-bottom: 3em;
+            }
+
+            p {
+                margin: 0 !important;
+            }
+
+            a {
+                color: $brand-primary !important;
+                text-decoration: underline;
+                margin-left: 3px;
+            }
+
+            .img-box {
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                color: $white !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: left !important;
+            }
+        }
+    }
+}
+
+
+/*********************
+JOBSEARCH CSS
+*********************/
+
+.jobsearch-bgcolor,
+.jobsearch-bgcolorhover:hover,
+.navbar-nav > li > a:before,
+.jobsearch-banner-search ul li.jobsearch-banner-submit i,
+.jobsearch-plain-btn a,
+.jobsearch-testimonial-slider .slick-arrow:hover,
+.jobsearch-featured-label,
+.jobsearch-pagination-blog ul li:hover a,
+.jobsearch-pagination-blog ul li:hover span,
+.jobsearch-jobdetail-view,
+.jobsearch-jobdetail-tags a:hover,
+.jobsearch-employer-list-btn:hover,
+ul li:hover .jobsearch-employer-grid-btn,
+.jobsearch_box_contact_form input[type="submit"],
+.jobsearch-fileUpload:hover span,
+.jobsearch-resumes-options li:hover a,
+.jobsearch-employer-jobnav ul li:hover i,
+.jobsearch-employer-jobnav ul li.active i,
+.jobsearch-employer-jobnav ul li.active ~ li.active:after,
+.jobsearch-employer-jobnav ul li.active:nth-child(2):after,
+.jobsearch-employer-jobnav ul li.active:nth-child(3):after,
+.jobsearch-employer-confitmation a:hover,
+.jobsearch-candidate-default-btn:hover,
+.jobsearch-candidate-download-btn:hover,
+.jobsearch-add-popup input[type="submit"],
+.jobsearch-user-form input[type="submit"],
+.jobsearch-classic-services ul li:hover i,
+.jobsearch-service-slider .slick-arrow:hover,
+.jobsearch-classic-priceplane-btn,
+.jobsearch-classic-priceplane.active,
+.active .jobsearch-simple-priceplane-basic a,
+.jobsearch-packages-priceplane-btn,
+.jobsearch-additional-priceplane.active h2,
+.jobsearch-additional-priceplane.active .jobsearch-additional-priceplane-btn,
+.jobsearch-contact-info-sec,
+.jobsearch-contact-form input[type="submit"],
+.contact-service a,
+.jobsearch-employer-profile-form .jobsearch-findmap-btn:hover,
+.jobsearch-login-box form input[type="submit"],
+.jobsearch-login-box form .jobsearch-login-submit-btn,
+.jobsearch-login-box form .jobsearch-reset-password-submit-btn,
+.jobsearch-login-box form .jobsearch-register-submit-btn,
+.jobsearch-radio-checkbox input[type="radio"]:checked + label,
+.jobsearch-radio-checkbox input[type="radio"]:hover + label,
+.jobsearch-load-more a:hover,
+.jobsearch-typo-wrap .jobsearch-add-review-con input[type="submit"],
+.email-jobs-top,
+.jobalert-submit,
+.tabs-list li a:before,
+.sort-list-view a:before,
+.more-actions,
+.preview-candidate-profile:hover,
+.restrict-candidate-sec a,
+.get-skill-detail-btn,
+.profile-improve-con ul li small,
+.jobsearch_searchloc_div .jobsearch_google_suggestions:hover,
+.jobsearch_searchloc_div .jobsearch_location_parent:hover,
+.jobsearch-jobdetail-btn.active:hover,
+.jobsearch-checkbox li:hover .filter-post-count,
+.jobsearch-checkbox input[type="checkbox"]:checked + label span,
+.jobsearch-checkbox input[type="checkbox"] + label:hover span,
+.jobsearch-checkbox input[type="radio"]:checked + label span,
+.jobsearch-checkbox input[type="radio"] + label:hover span,
+.jobsearch-pagination-blog ul li:hover a,
+.jobsearch-pagination-blog ul li:hover span,
+.jobsearch-pagination-blog ul li span.current,
+.jobsearch-typo-wrap .ui-widget-header,
+.jobsearch-typo-wrap .ui-state-default,
+.jobsearch-typo-wrap .ui-widget-content .ui-state-default,
+.jobsearch-drpzon-con:hover .jobsearch-drpzon-btn,
+.jobsearch-candidate-timeline small:after,
+.jobsearch-employerdetail-btn:hover,
+.jobsearch-typo-wrap .jobsearch-employer-profile-submit,
+.other-lang-translate-post,
+.jobsearch-resume-addbtn,
+.jobsearch-employer-profile-form .upload-port-img-btn:hover,
+.suggested-skills li:hover,
+.jobsearch-empmember-add-popup,
+.dash-hdtabchng-btn,
+.addcand-databy-emp,
+.alret-submitbtn-con a.jobsearch-savejobalrts-sbtn,
+.jobsearch-jobdetail-view,
+.jobsearch-jobdetail-tags a:hover,
+.jobsearch-employer-list-btn:hover,
+.jobsearch-company-photo .jobsearch-fileUpload span,
+.jobsearch-typo-wrap button:hover,
+.jobsearch-typo-wrap button:focus,
+.jobsearch-typo-wrap input[type="button"]:hover,
+.jobsearch-typo-wrap input[type="button"]:focus,
+.jobsearch-typo-wrap input[type="submit"]:hover,
+.jobsearch-typo-wrap input[type="submit"]:focus,
+.jobsearch-cvupload-file:hover span,
+.salary-type-radio input[type="radio"]:checked + label span,
+.demo-login-pbtns .active .jobsearch-demo-login-btn,
+.demo-login-pbtns .jobsearch-demo-login-btn:hover,
+.jobsearch-file-attach-sec li:hover .file-download-btn,
+.embed-code-getbtncon a,
+.jobsearch-usernotifics-menubtn a span,
+.hdernotifics-after-con a:hover,
+.quest-typecon-leftsec i,
+.addnew-questtypes-btnsiner a:hover i,
+.addnew-aplyquestbtn-con button,
+.addnew-questtypes-btnsiner a.active-type-itm i,
+.quests-item-answer p a,
+.jobsearch-applics-filterscon input.applics-filter-formbtn,
+.jobsearch-job-like,
+.jobsearch-popupplan-btn a,
+.skill-pop-btns a,
+.jobsearch-employer-followin-btn:hover,
+.jobsearch-view1-candidate-style a.jobsearch-candidate-download-btn {
+    background-color: $brand-primary !important;
+}
+
+.jobsearch-color,
+.jobsearch-colorhover:hover,
+.navbar-nav > li:hover > a,
+.navbar-nav > li.active > a,
+.navbar-nav .sub-menu > li:hover > a,
+.widget_nav_manu ul li:hover a,
+.widget_nav_manu ul li:hover a:before,
+.categories-list ul li i,
+li:hover .jobsearch-blog-grid-text h2 a,
+li:hover .jobsearch-read-more,
+.jobsearch-filterable ul li:hover a,
+.jobsearch-job-tag a,
+.jobsearch-list-option ul li a:hover,
+.jobsearch-jobdetail-postinfo,
+.jobsearch-jobdetail-options li i,
+.jobsearch-jobdetail-btn,
+.jobsearch-jobdetail-services i,
+.jobsearch-list-style-icon li i,
+.jobsearch_box_view_jobs_btn,
+.jobsearch-employer-list small,
+.jobsearch-employer-list-btn,
+.jobsearch-employer-grid figcaption small,
+.jobsearch-fileUpload span,
+.jobsearch-managejobs-appli,
+.jobsearch-transactions-tbody small,
+.jobsearch-resumes-subtitle a,
+.jobsearch-employer-confitmation a,
+.jobsearch-candidate-default-text h2 i,
+.jobsearch-candidate-default-btn,
+.jobsearch-candidate-grid figure figcaption p a,
+.jobsearch_candidate_info p a,
+.jobsearch-candidate-download-btn,
+.show-toggle-filter-list,
+.jobsearch-employer-dashboard-nav ul li:hover a,
+.jobsearch-employer-dashboard-nav ul li.active a,
+.jobsearch-candidate-savedjobs tbody td span,
+.jobsearch-cvupload-file span,
+.jobsearch-modal .modal-close:hover,
+.jobsearch-box-title span,
+.jobsearch-user-form-info p a,
+.jobsearch-services-classic span i,
+.widget_faq ul li:hover a,
+.grab-classic-priceplane ul li.active i,
+.jobsearch-classic-priceplane.active .jobsearch-classic-priceplane-btn,
+.jobsearch-plain-services i,
+.jobsearch-packages-priceplane ul li i,
+.jobsearch-additional-priceplane-btn,
+.contact-service i,
+.jobsearch-filterable ul li:hover a i,
+.jobsearch-login-box form a:hover,
+.jobsearch-resume-addbtn:hover,
+.img-icons a,
+.jobsearch-description ul li:before,
+.jobsearch-employer-list small a,
+.jobsearch-employer-wrap-section .jobsearch-candidate-grid figure figcaption span,
+.jobsearch-load-more a,
+.jobsearch-jobdetail-btn:hover,
+.tabs-list li:hover a,
+.tabs-list li.active a,
+.sort-list-view a.active,
+.sort-list-view a:hover,
+.jobsearch-applied-job-btns .more-actions:hover,
+.jobsearch-applied-job-btns .more-actions:hover i,
+.jobsearch-applied-job-btns .more-actions.open-options,
+.jobsearch-applied-job-btns .more-actions.open-options i,
+.restrict-candidate-sec a:hover,
+.get-skill-detail-btn:hover,
+.jobsearch-filterable-select .selectize-control.single .selectize-input input,
+.jobsearch-list-option ul li.job-company-name a,
+.adv-srch-toggler a,
+.jobsearch-typo-wrap .jobsearch-add-review-con input[type="submit"]:hover,
+.jobsearch-user-form input[type="submit"]:hover,
+.jobsearch_box_contact_form input[type="submit"]:hover,
+.register-form:hover,
+.jobsearch-applyjob-btn:hover,
+.send-contract-to-applicnt,
+.jobsearch_apply_job span,
+.jobsearch-sort-section .selectize-input,
+.careerfy-jobdetail-btn,
+a.careerfy-jobdetail-btn:hover,
+.jobsearch-send-email-popup-btn,
+.jobsearch-send-email-popup-btn:hover,
+.jobsearch-drpzon-con .jobsearch-drpzon-btn,
+.jobsearch-drag-dropcustom .jobsearch-drpzon-btn i,
+.jobsearch-user-form i.jobsearch-icon,
+.jobsearch-candidate-timeline-text span,
+.jobsearch-candidate-timeline small,
+.jobsearch-candidate-title i,
+.jobsearch_candidate_info small,
+.jobsearch-employerdetail-btn,
+.jobsearch-profile-title h2,
+.jobsearch-typo-wrap .jobsearch-findmap-btn,
+.jobsearch-employer-profile-form .jobsearch-findmap-btn,
+.jobsearch-employer-dashboard-nav ul li:hover i,
+.jobsearch-employer-dashboard-nav ul li.active i,
+.jobsearch-employer-dashboard-nav ul li:hover a,
+.jobsearch-employer-dashboard-nav ul li.active a,
+.jobsearch-typo-wrap .main-tab-section .jobsearch-employer-profile-submit:hover,
+.other-lang-translate-post:hover,
+.jobsearch-employer-profile-form .upload-port-img-btn,
+.jobsearch-resume-education span,
+.jobsearch-applied-jobs-text span,
+.jobsearch-empmember-add-popup:hover,
+.categories-list ul li i,
+.jobsearch-filterable ul li:hover a,
+.jobsearch-filterable ul li:hover a i,
+.jobsearch-filterable-select:after,
+.show-toggle-filter-list:hover,
+.jobsearch-seemore,
+.show-toggle-filter-list,
+.jobsearch-jobdetail-postinfo,
+.jobsearch-jobdetail-options li i,
+.jobsearch-jobdetail-btn:hover,
+.jobsearch-jobdetail-btn,
+.jobsearch-jobdetail-services i,
+.jobsearch-description ul li:before,
+.jobsearch-description ul li i,
+.jobsearch_apply_job span,
+.jobsearch_box_view_jobs_btn,
+.jobsearch-employer-list small,
+.jobsearch-employer-list-btn,
+.jobsearch-payments-checkbox input[type="checkbox"]:checked + label span:before,
+.jobsearch-payments-checkbox input[type="checkbox"] + label:hover span:before,
+.jobsearch-payments-checkbox input[type="radio"]:checked + label span:before,
+.jobsearch-payments-checkbox input[type="radio"] + label:hover span:before,
+.jobsearch-candidate-default-text ul li a.jobsearch-candidate-default-studio,
+.jobsearch-candidate-grid figure figcaption p a a,
+.aplicants-grid-inner-con p a,
+.short-li-icons li a,
+.embed-code-getbtncon a:hover,
+.hder-notifics-count,
+.hdernotifics-after-con a:hover,
+.hdernotifics-after-con a,
+.addnew-aplyquestbtn-con button:hover,
+a.show-allskills-pop,
+.verif-terms-con p a,
+.embed-code-getbtncon a:hover,
+.jobsearch-view1-candidate-style a.jobsearch-candidate-download-btn:hover {
+    color: $brand-primary;
+}
+
+.jobsearch-add-job-to-favourite.jobsearch-job-like i {
+    color: $white !important;
+}
+
+.jobsearch-bordercolor,
+.jobsearch-bordercolorhover:hover,
+.jobsearch-jobdetail-btn,
+.jobsearch-employer-list-btn,
+.jobsearch-fileUpload span,
+.jobsearch-employer-confitmation a,
+.jobsearch-candidate-default-btn,
+.jobsearch-candidate-download-btn,
+.jobsearch-cvupload-file span,
+.active .jobsearch-simple-priceplane-basic a,
+.jobsearch-additional-priceplane-btn,
+.jobsearch-resume-addbtn,
+.jobsearch-load-more a,
+.more-actions,
+.restrict-candidate-sec a,
+.get-skill-detail-btn,
+.jobsearch-banner-search .adv-search-options .ui-widget-content .ui-state-default,
+.jobsearch-typo-wrap .jobsearch-add-review-con input[type="submit"],
+.jobsearch-user-form input[type="submit"],
+.jobsearch-jobdetail-btn.active:hover,
+.jobsearch_box_contact_form input[type="submit"],
+.register-form,
+.jobsearch-checkbox input[type="checkbox"]:checked + label span,
+.jobsearch-checkbox input[type="checkbox"] + label:hover span,
+.jobsearch-checkbox input[type="radio"]:checked + label span,
+.jobsearch-checkbox input[type="radio"] + label:hover span,
+.careerfy-jobdetail-btn,
+.jobsearch-send-email-popup-btn,
+.jobsearch-typo-wrap .ui-state-default,
+.jobsearch-typo-wrap .ui-widget-content .ui-state-default,
+.jobsearch-drpzon-con .jobsearch-drpzon-btn,
+.jobsearch-employerdetail-btn,
+.jobsearch-typo-wrap .jobsearch-employer-profile-submit,
+.other-lang-translate-post,
+.jobsearch-typo-wrap .jobsearch-findmap-btn,
+.jobsearch-employer-profile-form .jobsearch-findmap-btn,
+.jobsearch-employer-profile-form .upload-port-img-btn,
+.jobsearch-empmember-add-popup,
+.dash-hdtabchng-btn,
+.addcand-databy-emp,
+.jobsearch-jobdetail-btn.active,
+.jobsearch-employer-list-btn,
+.jobsearch-company-photo .jobsearch-fileUpload span,
+.short-li-icons li a,
+.embed-code-getbtncon a,
+.hder-notifics-count,
+.hdernotifics-after-con a,
+.addnew-aplyquestbtn-con button,
+.jobsearch-job-like,
+.jobsearch-popupplan-btn a,
+.jobsearch-popupplan-wrap.jobsearch-recmnded-plan,
+.embed-code-getbtncon a {
+    border-color: $brand-primary !important;
+}
+
+.jobsearch-typo-wrap {
+    color: $black !important;
+
+}
+
+.jobsearch-employerdetail-btn {
+    color: $black !important;
+
+    &:hover {
+        color: $white !important;
+    }
+
+}
+
+.jobsearch-rssfeed-btn:hover,
+.jobsearch-rssfeed-btn i:hover {
+    color: $white !important;
+}
+
+.no-candidate-match-error a,
+.jobsearch-filterable .jobsearch-rssfeed-btn {
+    &:hover {
+        color: $white !important;
+    }
+}
+
+.jobsearch-typo-wrap h1,
+.jobsearch-typo-wrap h2,
+.jobsearch-typo-wrap h3,
+.jobsearch-typo-wrap h4 .jobsearch-typo-wrap h5,
+.jobsearch-typo-wrap h6 {
+    font-weight: normal !important;
+    letter-spacing: normal !important;
+}
+
+.jobsearch-subheader-form .jobsearch-banner-search ul li input[type="text"] {
+    margin-bottom: 0 !important;
+}
+
+.jobsearch-subheader-form .jobsearch-banner-search {
+    border: 1px solid $light-gray;
+}
+
+.jobsearch-search-filter-wrap,
+.jobsearch-subheader-form .jobsearch-banner-search,
+    {
+    box-shadow: none !important;
+}
+
+.jobsearch_box_contact_form i.jobsearch-icon,
+.jobsearch_box_contact_form i.careerfy-icon {
+    bottom: 28px;
+}
+
+.jobsearch-candidate-title {
+
+    i {
+        background: $white !important;
+        padding-top: 12px !important;
+    }
+
+    h2 {
+        font-family: 'total_sansbold' !important;
+        font-size: 16px;
+    }
+
+}
+
+.jobsearch-stats-list-wrap h6,
+.jobsearch-employer-dashboard-nav figcaption h2 {
+    font-family: 'total_sansbold' !important;
+}
+
+.jobsearch-add-skills-wrap h2 a {
+    font-family: 'total_sansbold' !important;
+}
+
+.jobsearch-stats-list-wrap {
+    box-shadow: none !important;
+}
+
+.get-skill-detail-btn,
+.dash-hdtabchng-btn,
+.jobsearch-employer-profile-submit,
+.jobsearch-typo-wrap input[type="submit"],
+.jobsearch-resume-addbtn,
+.jobsearch-empmember-add-popup,
+.addnew-aplyquestbtn-con button {
+    background: $brand-primary !important;
+    color: $white !important;
+    border: none !important;
+
+    &:hover {
+        background: $black !important;
+        color: $white !important;
+    }
+}
+
+.jobsearch-typo-wrap:hover input[type="submit"] {
+    color: $white !important;
+}
+
+
+.jobsearch-fileUpload {
+
+    &:hover span {
+        color: $white !important;
+    }
+}
+
+.jobsearch-employer-box-section,
+.jobsearch-employer-dashboard-nav {
+    border: 1px solid $light-gray;
+    box-shadow: none !important;
+}
+
+.jobsearch-drpzon-con .upload-icon-con i {
+    color: $black;
+}
+
+.jobsearch-applicants-stats-wrap i {
+    border: 1px solid $black !important;
+    color: $black !important;
+    font-size: 16px !important;
+    padding-top: 11px !important;
+}
+
+.addnew-questtypes-btnsiner a {
+    line-height: 2.4 !important;
+}
+
+.jobsearch-login-box form .jobsearch-register-submit-btn,
+.jobsearch-login-box form .jobsearch-login-submit-btn {
+    width: 100% !important;
+    border-radius: 8px !important;
+    margin: 1em 0 0.5em !important;
+    padding: 1em 0 !Important;
+    letter-spacing: 0.1em !important;
+}
+
+.jobsearch-login-box {
+    background: $white !important;
+
+    h2 {
+        display: none !important;
+    }
+}
+
+.jobsearch-banner-search ul li.jobsearch-banner-submit i {
+    z-index: 5;
+    margin: 0 auto;
+    display: block;
+    width: 25px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent !important;
+    font-size: 20px !important;
+    border: 0;
+}
+
+.user-dashthumb-remove {
+    background: transparent !important;
+}
+
+.jobsearch-typo-wrap .ui-state-default,
+.jobsearch-typo-wrap .ui-widget-content .ui-state-default {
+    background: $light-gray !important;
+}
+
+.jobsearch-joblisting-classic .jobsearch-job-like {
+    padding-top: 4px !important;
+}
+
+.jobsearch-main-content {
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {
+
+        line-height: 1;
+        margin-bottom: 0.75rem;
+
+        // Removing text decoration from all headline links
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.jobsearch-jobdetail-content {
+
+    p {
+        margin-bottom: 1.5rem !important;
+    }
+
+}
+
+.jobsearch-description {
+
+    ul {
+        margin-bottom: 1.5rem !important;
+
+        li {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.jobsearch-whatsapp-msgcon {
+    display: none !important;
+}
+
+.jobsearch-option-btn {
+    background-color: $brand-secondary !important;
+}
+
+.jobsearch-cand-details-btns a.jobsearch-candidate-default-btn {
+    background: $brand-primary !important;
+    color: $white !important;
+    border: none !important;
+}
+
+.jobsearch-cand-details-btns a,
+.jobsearch-cand-details-btns a.jobsearch-candidate-default-btn {
+    border: 1px solid $brand-primary;
+    color: $brand-primary;
+
+    &:hover {
+        border: 1px solid $black;
+        color: $black;
+        background: transparent !important;
+    }
+}
+
+.jobsearch_progressbar .bar {
+    background-color: $brand-secondary !important;
+}
+
+.jobsearch-typo-wrap select {
+    padding: 0.5rem !important;
+    border: 1px solid $medium-gray !important;
+}
+
+.jobsearch-onlyonelog-form .jobsearch-login-box {
+    border-radius: 8px !important;
+}
+
+body.page-id-541,
+body.page-id-544 {
+    background: #F4F7F7 !important;
+}
+
+/*********************
+PAGE : BLOG POSTS
+*********************/
+.blog-post {
+    .featured-image {
+        margin-bottom: 0.75em;
+    }
+
+    .article-header {
+        h6 {
+            font-weight: normal !important;
+            font-family: $header-font;
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+/*********************
+WOOCOMMERCE PAGINATION
+*********************/
+.woocommerce nav.woocommerce-pagination ul {
+    border: 0 !important;
+}
+
+.woocommerce nav.woocommerce-pagination ul li {
+    border: 0 !important;
+    margin: 10px;
+    font-family: $header-font;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span {
+    padding: 1em 1.35em;
+    color: $white;
+    background: #CECECE !important;
+    font-family: $header-font;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current {
+    background: $black !important;
+    color: $white !important;
+    font-family: $header-font;
+}
+
+/*********************
+WOOCOMMERCE VARIATION
+*********************/
+.woocommerce div.product form.cart .variations label,
+.woocommerce div.product form.cart .variations td.label {
+    font-weight: normal !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 0.5em !important;
+}
+
+.single-product div.product table.variations th,
+.single-product div.product table.variations td {
+    display: list-item;
+    padding: 0;
+    list-style: none;
+    background-color: transparent;
+}
+
+.woocommerce div.product form.cart .variations {
+    margin-bottom: 2em !important;
+    margin-top: 1em;
+}
+
+.woocommerce-variation-price {
+    margin-bottom: 1em;
+    float: left !important;
+    display: block !important;
+    width: 100%;
+}
+
+/*********************
+WOOCOMMERCE
+*********************/
+.woocommerce-shop {
+    h1 {
+        text-align: center !important;
+        padding-bottom: 2em;
+    }
+}
+
+// WooCommerce Products Page
+.summary {
+    .woocommerce-Price-amount.amount {
+        color: $brand-primary !important;
+        margin-bottom: 1em !important;
+    }
+}
+
+.woocommerce-product-details__short-description {
+    margin-bottom: 1.5em !important;
+    display: block !important;
+}
+
+.woocommerce div.product form.cart div.quantity {
+    float: left !important;
+    margin-right: 15px !important;
+}
+
+.woocommerce {
+    [type=number] {
+        height: 44px !important;
+        border: 2px solid $brand-primary !important;
+    }
+}
+
+#product-gallery-images {
+
+    button,
+    .button {
+        color: transparent !important;
+        background: transparent !important;
+    }
+}
+
+
+
+.woocommerce div.product form.cart .button {
+    text-transform: uppercase;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+a.woocommerce-gallery-images-gallery-carousel-cell {
+    width: 100% !important;
+}
+
+.woocommerce .entry-summary {
+
+    p,
+    .p {
+        font-size: 1rem !important;
+        margin-bottom: 1em;
+    }
+
+    .accordion {
+        margin-top: 2em;
+    }
+
+    .accordion-content {
+        font-size: 0.875rem !important;
+
+        ul {
+            li {
+                font-size: 1rem !important;
+            }
+        }
+
+        small {}
+    }
+
+    .woocommerce div.product form.cart .button {
+        width: 50%;
+        text-transform: uppercase;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .woocommerce div.product form.cart div.quantity {
+        width: 50% !important;
+        margin-top: 2em;
+    }
+
+    .woocommerce .quantity .qty {
+        width: 50% !important;
+    }
+
+    .woocommerce-review-link {
+        letter-spacing: 0.1em;
+    }
+
+    .product_meta {
+        display: none !important;
+    }
+
+    .accordion-title {
+        color: $black;
+    }
+
+    .accordion-title:hover,
+    .accordion-title:focus {
+        color: $white;
+    }
+
+    .label {
+        background: transparent;
+    }
+
+    td.label {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+}
+
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+    font-size: 1.5625rem !important;
+    color: $brand-secondary !important;
+    font-family: $header-font;
+    line-height: 1;
+}
+
+// Tracking
+.woocommerce-account a.track-button {
+    height: 44px !important;
+}
+
+// Accounts
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register {
+    border-radius: 8px !important;
+}
+
+// Payment in Checkout
+#add_payment_method #payment,
+.woocommerce-cart #payment,
+.woocommerce-checkout #payment {
+    background: #f7f6f7 !important;
+    border-radius: 8px !important;
+}
+
+#add_payment_method #payment div.payment_box,
+.woocommerce-cart #payment div.payment_box,
+.woocommerce-checkout #payment div.payment_box {
+    background: #f7f6f7 !important;
+}
+
+#add_payment_method #payment div.payment_box::before,
+.woocommerce-cart #payment div.payment_box::before,
+.woocommerce-checkout #payment div.payment_box::before {
+    border: 1em solid #f7f6f7;
+    border-right-color: transparent !important;
+    border-left-color: transparent !important;
+    border-top-color: transparent !important;
+}
+
+// Checkout Thank You
+.woocommerce .woocommerce-customer-details address {
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px !important;
+}
+
+.woocommerce .woocommerce-customer-details .woocommerce-customer-details--phone::before {
+    font-family: 'Font Awesome 5 Pro';
+    content: "\f095";
+    font-weight: 300 !important;
+}
+
+.woocommerce .woocommerce-customer-details .woocommerce-customer-details--email::before {
+    font-family: 'Font Awesome 5 Pro';
+    content: "\f0e0";
+    font-weight: 300 !important;
+}
+
+// Cart
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals {
+    width: 100%;
+}
+
+// Clean Tables
+.woocommerce table.shop_table {
+    border-radius: 8px !important;
+}
+
+thead {
+    background: transparent;
+}
+
+tbody tr:nth-child(even) {
+    background: transparent;
+}
+
+tfoot {
+    background: transparent;
+}
+
+// Coupons Basket
+.woocommerce #content table.cart td.actions .input-text,
+.woocommerce table.cart td.actions .input-text,
+.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce-page table.cart td.actions .input-text {
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.coupon {
+    .button {
+        width: 100% !important;
+    }
+
+    input#coupon_code {
+        text-align: center !important;
+    }
+}
+
+
+
+#add_payment_method table.cart td.actions .coupon .input-text,
+.woocommerce-cart table.cart td.actions .coupon .input-text,
+.woocommerce-checkout table.cart td.actions .coupon .input-text {
+    width: 100% !important;
+    min-height: 3rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.coupon {
+    .button {
+        width: 100% !important;
+    }
+}
+
+.wc_coupon_message_wrap {
+    display: none !important;
+}
+
+// Sales Tag
+.wapl-diagonal-bar .product-label {
+    text-transform: lowercase;
+    font-family: $header-font;
+}
+
+// WooCommerce Shop Loop
+.woocommerce-loop-product__title {
+    text-align: center !important;
+}
+
+.woocommerce ul.products {
+    a.added_to_cart {
+        width: 100% !important;
+        text-align: center !important;
+        font-family: $header-font;
+    }
+}
+
+a.added_to_cart {
+    width: 100% !important;
+    text-align: left !important;
+    font-family: $header-font;
+}
+
+.woocommerce ul.products li.product .price {
+    color: $black;
+    text-align: center !important;
+    font-size: .857em !important;
+    font-weight: 400 !important;
+}
+
+.woocommerce ul.products li.product .button {
+    width: auto !important;
+    margin: 2em auto 0 !important;
+    display: block !important;
+}
+
+.woocommerce-result-count {
+    font-size: 0.825rem !important;
+}
+
+.woocommerce-ordering select {
+    color: $black !important;
+    font-size: 0.825rem !important;
+    border-top: 0px solid $black;
+    border-right: 0px solid $black;
+    border-bottom: 2px solid $black;
+    border-left: 0px solid $black;
+    background-size: 9px 40px !important;
+    background-image: url("https://www.theonlytjn.com/wp-content/uploads/2021/10/angle-down-light.svg") !important;
+}
+
+.woocommerce ul.products li.product a h2 {
+    color: $black !important;
+    font-size: 1.05rem !important;
+}
+
+.woocommerce div.product .product_title {}
+
+// WooCommerce Buttons
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+    background: $black !important;
+    color: $white !important;
+    border-radius: 0;
+    font-size: 0.925rem;
+    padding: 0.975em 1.2em !important;
+    font-family: $header-font;
+
+    &:hover {
+        background: $brand-primary !important;
+        color: $white !important;
+    }
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+    background: $black !important;
+    color: $white;
+    border-radius: 0;
+    font-size: 0.925rem;
+    font-family: $header-font;
+
+    &:hover {
+        background: $brand-primary !important;
+        color: $white !important;
+    }
+}
+
+.woocommerce button.button.alt.disabled {
+    color: $white !important;
+}
+
+// WooCommerce Messages
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+    width: 100% !important;
+    margin: 2em 0 !important;
+}
+
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+    border-top-color: $brand-primary !important;
+}
+
+.woocommerce-error::before,
+.woocommerce-info::before,
+.woocommerce-message::before {
+    color: $brand-primary !important;
+}
+
+// WooCommerce Extras
+
+// YITH Add To Wishlist
+
+.yith-wcwl-add-button,
+.product_meta {
+    margin-bottom: 0.5em !important;
+}
+
+.yith-wcwl-add-button {
+    font-size: 0.925rem !important;
+}
+
+// YITH Waiting List
+#yith-wcwtl-output label {
+    margin-bottom: 1.5rem;
+}
+
+// YITH My Account
+
+.yith-wcmap .user-profile .user-info .logout a {
+    border-radius: 0;
+    font-size: 0.725rem;
+    padding: 0.975em 1.2em !important;
+    font-family: $header-font;
+    float: left;
+    margin-top: 10px !important;
+}
+
+.yith-wcmap .user-profile .user-info .username {
+    font-weight: normal !important;
+    font-family: $header-font;
+}
+
+.yith-wcmap .user-profile .user-info .user-email {
+    font-size: 0.875rem !important;
+}
+
+// YITH ...
+.yith-wcmap-banners-wrapper .yith-wcmap-banner .banner-title {}
+
+
+.clever-icon-caret-up:before {
+    content: "\c059" !important;
+}
+
+span.item-label {}
+
+// Side Cart Premium
+
+input.xoo-wsc-qty {
+    margin: 0 !important;
+}
+
+.xoo-wsc-basket {
+    border-radius: 8px !important;
+    background: $light-gray !important;
+}
+
+.xoo-wsc-sp-container {
+    display: none !important;
+}
+
+span.xoo-wsc-ft-amt-label,
+span.xoo-wsc-pname,
+span.xoo-wsc-pname a {
+    font-weight: normal !important;
+    font-family: $header-font;
+}
+
+// XT Side Cart
+
+.xt_woofc-quantity .xt_woofc-quantity-col.xt_woofc-quantity-col-input input {
+    border: 0 !important;
+}
+
+/*********************
+WOOCOMMERCE : MOBILE
+*********************/
+@media screen and (max-width: 39.9375em) {
+
+    .woocommerce ul.products[class*=columns-] li.product,
+    .woocommerce-page ul.products[class*=columns-] li.product {
+        width: 100% !important;
+    }
+
+    .woocommerce .woocommerce-result-count {
+        width: 100% !important;
+        margin-bottom: 1.5em !important;
+        text-align: center !important;
+    }
+
+    .woocommerce .woocommerce-ordering {
+        width: 100% !important;
+    }
+}
+
+/*********************
+IPVA
+*********************/
+#ivpa-content {
+    margin: 0 !important;
+
+    .ivpa_attribute {
+        margin-bottom: 2em !important;
+    }
+
+    .ivpa_title {
+        font-size: 1.15rem !important;
+        color: $black !important;
+        font-family: $header-font;
+        font-weight: normal !important;
+        margin-top: 0 !important;
+    }
+
+    .ivpa-terms {
+        margin-top: 0 !important;
+    }
+
+    .ivpa-info-box-icon {
+        display: none;
+    }
+
+    .ivpa_attribute.ivpa_text.ivpa_border .ivpa_term {
+        font-size: 0.925rem !important;
+        font-weight: normal !important;
+        line-height: 1 !important;
+    }
+
+    .ivpa_text .ivpa_term.ivpa_active {
+        background: $white !important;
+        border: 2px solid $black !important;
+        border-radius: 0 !important;
+        padding: 0.975em 1.5em !important;
+        margin-bottom: 0.75em;
+        float: left !important;
+        font-family: $header-font;
+        font-weight: normal !important;
+        font-size: 0.925rem;
+        color: $black !important;
+    }
+
+    .ivpa_text .ivpa_term.ivpa_active.ivpa_clicked {
+        background: $black !important;
+        border: 2px solid $black !important;
+        border-radius: 0 !important;
+        padding: 0.975em 1.5em !important;
+        margin-bottom: 0.75em;
+        float: left !important;
+        font-family: $header-font;
+        font-weight: normal !important;
+        font-size: 0.925rem;
+        color: $white !important;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .ivpa_term {
+        width: 100%;
+        margin-bottom: 0.5em;
+        float: left;
+    }
+}
+
+/*********************
+ELFSIGHT CONTACT FORM
+*********************/
+.eapps-form-header-title,
+.eapps-form-element-label {
+    font-weight: normal !important;
+    font-family: $header-font;
+}
+
+/*********************
+UBERMENU CENTRALISED
+*********************/
+.ubermenu *:focus {
+    outline: none;
+}
+
+.ubermenu-responsive-default.ubermenu.ubermenu-responsive .ubermenu-column,
+.ubermenu-responsive-default.ubermenu.ubermenu-responsive .ubermenu-column-auto {
+    text-align: left;
+}
+
+.ubermenu-skin-trans-black.ubermenu-responsive-toggle {}
+
+.ubermenu-skin-trans-black-hov.ubermenu-responsive-toggle,
+.ubermenu-responsive-toggle.ubermenu-responsive-toggle-main {}
+
+/*********************
+NINJA FORMS
+*********************/
+.nf-error-msg,
+.ninja-forms-req-symbol,
+.nf-form-fields-required {}
+
+::-webkit-input-placeholder {
+    font-size: 0.825rem;
+    color: $brand-secondary;
+}
+
+:-ms-input-placeholder {
+    font-size: 0.825rem;
+    color: $brand-secondary;
+}
+
+::placeholder {
+    font-size: 0.825rem;
+    color: $brand-secondary;
+}
+
+.nf-form-content button,
+.nf-form-content input[type=button],
+.nf-form-content input[type=submit] {
+    width: 100% !important;
+    float: left;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    font-size: 0.825rem;
+    background: $brand-secondary !important;
+    color: $white !important;
+
+    &:hover {
+        background: $brand-primary !important;
+        color: $white !important;
+    }
+}
+
+.field-wrap > div input[type=checkbox],
+.field-wrap button,
+.field-wrap input[type=button],
+.field-wrap input[type=submit] {
+    width: 100%;
+    float: left;
+}
+
+/*********************
+SCROLL BACK TO TOP
+*********************/
+.smoothscroll-top {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99;
+    background-color: $brand-primary;
+    color: $white;
+    width: 47px;
+    height: 44px;
+    line-height: 44px;
+    right: 25px;
+    bottom: -25px;
+    padding-top: 2px;
+    border-radius: 8px;
+    transition: all .5s ease-in-out;
+    transition-delay: .2s;
+}
+
+.smoothscroll-top:hover {
+    background-color: $brand-secondary;
+    color: $white;
+    transition: all .2s ease-in-out;
+    transition-delay: 0;
+}
+
+.smoothscroll-top.show {
+    visibility: visible;
+    cursor: pointer;
+    opacity: 1;
+    bottom: 25px;
+}
+
+.smoothscroll-top i.fa {
+    line-height: inherit;
+}
+
+/*********************
+PAGINATION
+*********************/
+.page-navigation {
+    width: 100%;
+    float: left;
+    margin: 2.5em 0 !important;
+}
+
+ul.center-list-pagination {
+    display: table !important;
+    margin: 0 auto;
+
+    li {
+        display: inline;
+        color: $white;
+        margin: 0 0.75em;
+        font-family: $header-font;
+        text-align: center;
+    }
+
+    li.current {
+        display: inline;
+        padding: 1.2em 1.15em 1em 1.35em;
+        color: $white;
+        background: $brand-primary !important;
+        font-family: $header-font;
+        text-align: center;
+    }
+
+    li a {
+        display: inline;
+        padding: 1.2em 1.35em 1em;
+        color: $white;
+        background: $medium-gray;
+        font-family: $header-font;
+        text-align: center;
+    }
+
+    li a:hover {
+        display: inline;
+        padding: 1.2em 1.35em 1em;
+        color: $white;
+        background: $brand-primary !important;
+        font-family: $header-font;
+        text-align: center;
+    }
+}
+
+/*********************
+LINK STYLES*********************/
+a,
+a:visited {
+
+    // Mobile tap color
+    &:link {
+        //Highlight links on iOS, Similar to :hover for mobile devices.
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+/*********************
+H1, H2, H3, H4, H5 P STYLES
+*********************/
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: $header-font;
+    line-height: 1;
+
+    // Removing text decoration from all headline links
+    a {
+        text-decoration: none;
+    }
+
+}
+
+.text-caps {
+    text-transform: uppercase !important;
+}
+
+.text-spacing {
+    letter-spacing: 0.2em !important;
+}
+
+h1,
+.h1 {}
+
+h2,
+.h2 {}
+
+h3,
+.h3 {}
+
+h4,
+.h4 {}
+
+h5,
+.h5 {}
+
+h6,
+.h6 {}
+
+/*********************
+HEADER STYLES
+*********************/
+#top-bar {
+    background: $brand-primary;
+    padding: 0.25em 0;
+    color: $white !important;
+    font-family: 'total_sansbold', sans-serif !important;
+    position: relative;
+    z-index: 999999;
+
+    .ubermenu-responsive-toggle.ubermenu-responsive-toggle-main {}
+
+    a {
+        color: $white !important;
+
+        &:hover {
+            color: $white !important;
+        }
+    }
+
+    p {
+        margin-bottom: 0 !important;
+        font-size: 0.825rem !important;
+        font-family: 'total_sansbold', sans-serif !important;
+        color: $white !important;
+    }
+}
+
+
+#header {
+    background: #FAFAFA;
+    padding: 2em 2em;
+    font-family: 'total_sansregular', sans-serif !important;
+
+    .ubermenu-responsive-toggle.ubermenu-responsive-toggle-main {}
+
+    .avatar-pic {
+        width: rem-calc(75); //Use to adjust the width of logo on small
+        height: rem-calc(75); //Use to adjust the width of logo on small
+        float: right;
+        border-radius: 12px
+    }
+
+    h5,
+    h6 {
+        margin-bottom: 0 !important;
+    }
+
+    p {
+        color: #C1C1C1 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .logo-large {
+        margin: 0;
+        display: block;
+        width: rem-calc(150); //Use to adjust the width of logo on small
+        float: left;
+    }
+
+    .logo-small {
+        margin: 1em auto;
+        display: block;
+        width: rem-calc(150); //Use to adjust the width of logo on small
+    }
+
+    ul.off-canvas-list li {
+        list-style: none;
+    }
+}
+
+#side-nav {
+    border-right: 1px solid $light-gray;
+    height: 100vh;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+.top-bar {
+    .title-area {
+        z-index: 1;
+    }
+}
+
+.off-canvas-list {
+    ul {
+        margin-left: 0;
+
+        li {
+            a {
+                border-bottom: 0px;
+            }
+        }
+
+        .dropdown {
+            margin-left: 20px;
+        }
+    }
+}
+
+.menu > li > a {
+    background: transparent;
+    color: $brand-primary;
+    text-transform: uppercase;
+}
+
+.menu > li > a:hover {
+    background: transparent;
+    color: $brand-primary;
+}
+
+.menu .active > a {
+    background: transparent;
+    color: $brand-primary;
+}
+
+.menu .active > a:hover {
+    background: transparent;
+    color: $brand-primary;
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+#content {
+    #inner-content {}
+}
+
+.single-title,
+.page-title {}
+
+.single-title {}
+
+.page-title {
+
+    // Remove Foundation vcard styling from author page titles
+    .vcard {
+        border: 0px;
+        padding: 0px;
+    }
+}
+
+.archive-title {}
+
+// Post meta
+.byline {
+    color: #999;
+
+    time {}
+}
+
+// Entry content
+.entry-content {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .alignleft,
+    img.alignleft {
+        margin-right: 1.5em;
+        display: inline;
+        float: left;
+    }
+
+    .alignright,
+    img.alignright {
+        margin-left: 1.5em;
+        display: inline;
+        float: right;
+    }
+
+    .aligncenter,
+    img.aligncenter {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        clear: both;
+    }
+
+    video,
+    object {
+        max-width: 100%;
+        height: auto;
+    }
+
+    pre {
+        background: #eee;
+        border: 1px solid #cecece;
+        padding: 10px;
+    }
+}
+
+.wp-caption {
+    max-width: 100%;
+    background: #eee;
+    padding: 5px;
+
+    // Images inside wp-caption
+    img {
+        max-width: 100%;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    p.wp-caption-text {
+        font-size: 0.85em;
+        margin: 4px 0 7px;
+        text-align: center;
+    }
+}
+
+// Add Foundation styling to password protect button
+.post-password-form input[type="submit"] {
+    @include button;
+}
+
+/*********************
+IMAGE GALLERY STYLES
+*********************/
+.gallery {
+    dl {
+        a {}
+
+        img {}
+    }
+
+    dt {}
+
+    dd {}
+}
+
+// Gallery caption styles
+.gallery-caption {}
+
+.size-full {}
+
+.size-large {}
+
+.size-medium {}
+
+.size-thumbnail {}
+
+/*********************
+PAGE NAVI STYLES
+*********************/
+.page-navigation {
+    margin-top: 1rem;
+}
+
+/*********************
+COMMENT STYLES
+*********************/
+#comments {
+    .commentlist {
+        margin-left: 0px;
+    }
+}
+
+#respond {
+    ul {
+        margin-left: 0px;
+    }
+}
+
+.commentlist {
+    li {
+        position: relative;
+        clear: both;
+        overflow: hidden;
+        list-style-type: none;
+        margin-bottom: 1.5em;
+        padding: 0.7335em 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        ul.children {
+            margin: 0;
+
+            li {}
+
+            .comment {}
+
+            .alt {}
+
+            .odd {}
+
+            .even {}
+
+            .depth-1 {}
+
+            // Change number for different depth
+            .byuser {}
+
+            .bypostauthor {}
+
+            .comment-author-admin {}
+        }
+    }
+
+    li[class*=depth-] {
+        margin-top: 1.1em;
+    }
+
+    li.depth-1 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    li:not(.depth-1) {
+        margin-left: 10px;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    li.depth-2 {}
+
+    li.depth-3 {}
+
+    li.depth-4 {}
+
+    li.depth-5 {}
+
+    // General comment classes
+    .alt {}
+
+    .odd {}
+
+    .even {}
+
+    .parent {}
+
+    .comment {}
+
+    .children {}
+
+    .pingback {}
+
+    .bypostauthor {}
+
+    .comment-author {}
+
+    .comment-author-admin {}
+
+    .thread-alt {}
+
+    .thread-odd {}
+
+    .thread-even {}
+
+    // vcard
+    .vcard {
+        margin-left: 50px;
+
+        cite.fn {
+            font-weight: 700;
+            font-style: normal;
+
+            a.url {}
+        }
+
+        time {
+            float: right;
+
+            a {
+                color: #999;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        img.photo {}
+
+        img.avatar {
+            position: absolute;
+            left: 10px;
+            padding: 2px;
+            border: 1px solid #cecece;
+            background: #fff;
+        }
+    }
+
+    // end .commentlist .vcard
+    // comment meta
+    .comment-meta {
+        a {}
+    }
+
+    .commentmetadata {
+        a {}
+    }
+
+    // comment content
+    .comment_content {
+        p {
+            margin: 0.7335em 0 1.5em;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+    }
+
+    // end .commentlist .comment_content
+    // comment reply link
+    .comment-reply-link {
+        float: right;
+
+        &:hover,
+        &:focus {}
+    }
+
+    // end .commentlist .comment-reply-link
+}
+
+// end .commentlist
+/*********************
+COMMENT FORM STYLES
+*********************/
+.respond-form {
+    margin: 1.5em 10px;
+    padding-bottom: 2.2em;
+
+    form {
+        margin: 0.75em 0;
+
+        li {
+            list-style-type: none;
+            clear: both;
+            margin-bottom: 0.7335em;
+
+            label,
+            small {
+                display: none;
+            }
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=url],
+        textarea {
+            padding: 3px 6px;
+            background: #efefef;
+            border: 2px solid #cecece;
+            line-height: 1.5em;
+
+            &:focus {
+                background: #fff;
+            }
+
+            // form validation
+            &:invalid {
+                outline: none;
+                border-color: #fbc2c4;
+                background-color: #f6e7eb;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                -ms-box-shadow: none;
+                box-shadow: none;
+            }
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=url] {
+            max-width: 400px;
+            min-width: 250px;
+        }
+
+        textarea {
+            resize: none;
+            width: 97.3%;
+            height: 150px;
+        }
+    }
+}
+
+// comment submit button
+#submit {}
+
+// comment form title
+#comment-form-title {
+    margin: 0 0 1.1em;
+}
+
+// cancel comment reply link
+#cancel-comment-reply {
+    a {}
+}
+
+// logged in comments
+.comments-logged-in-as {}
+
+// allowed tags
+#allowed_tags {
+    margin: 1.5em 10px 0.7335em 0;
+}
+
+// No comments
+.nocomments {
+    margin: 0 20px 1.1em;
+}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.sidebar {}
+
+#searchsubmit {}
+
+.widgettitle {}
+
+.widget {
+    margin-bottom: 2em !important;
+
+    ul {
+        margin: 0;
+
+        li {
+            list-style: none;
+
+            &:first-child {}
+
+            &:last-child {}
+
+            a {}
+
+            // deep nesting
+            ul {}
+        }
+    }
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+#footer {
+    clear: both;
+    padding: 3em 0em;
+    background: $light-gray;
+
+    .footer-section {
+        margin-bottom: 2em !important;
+    }
+
+    .logo-large-footer {
+        margin: 0;
+        display: block;
+        width: rem-calc(75); //Use to adjust the width of logo on small
+        float: left;
+    }
+
+    .logo-small-footer {
+        margin: 1em auto;
+        display: block;
+        width: rem-calc(150); //Use to adjust the width of logo on small
+    }
+
+    hr {
+        margin: 3em 0;
+        border-bottom: 1px solid #D1D1D1;
+    }
+
+    .button {
+        background: $black;
+        text-transform: uppercase !important;
+        letter-spacing: 0.1em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $black;
+        text-transform: uppercase !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    ul {
+        margin: 0em;
+
+        li {
+            color: $black;
+            list-style: none;
+            margin-bottom: 0.5rem !important;
+
+            a {
+                color: $black;
+            }
+
+            a:hover {
+                color: $brand-primary;
+            }
+        }
+    }
+}
+
+#bottom-footer {
+    background: #F2F1F0;
+    padding: 3em 0;
+    float: left;
+    width: 100%;
+
+    p {
+        color: $black;
+        margin-bottom: 0.5em !important;
+        font-size: 0.825rem !important;
+    }
+
+    p a {
+        color: $brand-primary;
+    }
+
+    p a:hover {
+        color: $brand-primary;
+    }
+
+    ul.center-list-social {
+        display: table !important;
+        margin: 0.5em auto 1em;
+
+        li {
+            display: inline;
+            padding: 1em;
+            font-size: 1.15rem;
+
+            a {
+                color: $black;
+            }
+
+            a:hover {
+                color: $brand-primary;
+            }
+        }
+    }
+}
+
+ul.center-list-footer {
+    display: table !important;
+    margin: 0.5em auto 1em;
+
+    li {
+        display: inline;
+        padding: 1em;
+    }
+}
+
+ul.center-list-social {
+    display: table !important;
+    margin: 0.5em auto 1em;
+
+    li {
+        display: inline;
+        padding: 1em;
+        font-size: 1.5rem;
+    }
+}
+
+/*********************
+FOUNDATION STYLES
+*********************/
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: $body-font-family;
+    border-radius: 8px !important;
+}
+
+.jobsearch_box_contact_form input[type=submit] {
+    background: $brand-primary !important;
+    color: $white !important;
+
+    &:hover {
+        background: $black !important;
+        color: $white !important;
+    }
+
+}
+
+.jobsearch-radio-checkbox label {
+    border-radius: 8px !important;
+}
+
+/*********************
+PLUGIN STYLES
+*********************/
+// Makes Gravity Forms play nice with Foundation Form styles
+.gform_body ul {
+    list-style: none outside none;
+    margin: 0;
+}
